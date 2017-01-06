@@ -1,0 +1,9 @@
+{
+  "name": "observatorio-fapepi",
+  "version": "0.1.0",
+  "description": "A place to exhibit the report of projects supported by FAPEPI",
+  "private": true,
+  "dependencies": {
+    "d3-tip": "^0.7.1"
+  }
+}
