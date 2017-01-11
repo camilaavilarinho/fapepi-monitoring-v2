@@ -1,0 +1,184 @@
+{
+  "VP":{
+    "mestrado":[
+      {"name": "Física", "score": 5},
+      {"name": "Ciências de Materiais", "score": 7},
+      {"name": "Letras ", "score": 3},
+      {"name": "Química", "score": 7},
+      {"name": "Ciência Animal", "score": 10},
+      {"name": "Biotecnologia/Renorbio", "score": 20}
+    ],
+    "doutorado":[
+      {"name": "Ciência Animal", "score": 10},
+      {"name": "Biotecnologia/Renorbio", "score": 20}
+    ]
+  } ,
+    "TE": {
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "SR":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "PX":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "PC":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "MP":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "LP":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "FL":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "CS":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "CM":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "BE":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "BP":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "AP":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "AG":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    },
+    "AC":{
+      "mestrado":[
+        {"name": "Física", "score": 5},
+        {"name": "Ciências de Materiais", "score": 7},
+        {"name": "Letras ", "score": 3},
+        {"name": "Química", "score": 7}
+      ],
+      "doutorado":[
+        {"name": "Ciência Animal", "score": 10},
+        {"name": "Biotecnologia/Renorbio", "score": 20}
+      ]
+    }
+  }

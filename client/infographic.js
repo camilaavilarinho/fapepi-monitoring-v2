@@ -40,7 +40,7 @@ function initialize(){
   data = all_data['16'][0];
 };
 
-d3.json("data/chart_data.json", function(json) {
+d3.json("data/graphs.json", function(json) {
   chart_data = json;
 });
 
@@ -88,15 +88,17 @@ ord = ['1', '2', '3', '4', '5', '6'];
 areas = ["Comunicação", "Computação", "Agronomia", "Física", "História", "Biologia"];
 var i = 0;
 
-var n = 6, // number of samples
+var n = ord.length, // number of samples
     m = 2; // number of series
 
     var w = 435,
     h = 150,
-    x = d3.scale.linear().domain([50, 100]).range([0, h]),
+    colors = ["#9ECAE1", "#08306B"];
+    /*x = d3.scale.linear().domain([50, 100]).range([0, h]),
     y0 = d3.scale.ordinal().domain(d3.range(n)).rangeBands([0, w], .2),
     y1 = d3.scale.ordinal().domain(d3.range(m)).rangeBands([0, y0.rangeBand()]),
-    colors = ["#9ECAE1", "#08306B"];
+    colors = ["#9ECAE1", "#08306B"];*/
+
 
     var tip = d3.tip()
     .attr('class', 'd3-tip')
@@ -113,7 +115,40 @@ var n = 6, // number of samples
     vis.call(tip);
 
     function draw(data) {
-      var g = vis.selectAll("g")
+
+      var mest = data.mestrado;
+      var max_n = 0;
+			for (var d in mest) {
+				max_n = Math.max(mest[d].score, max_n);
+			}
+      var dx = w / max_n;
+			var dy = h / mest.length;
+      
+
+      var bars = vis.selectAll(".bar")
+				.data(mest)
+				.enter()
+				.append("rect")
+				.attr("class", function(d, i) {return "bar " + d.name;})
+				.attr("x", function(d, i) {return 0;})
+				.attr("y", function(d, i) {return dy*i;})
+        .attr("fill", function(d, i) { return colors[i]; })
+				.attr("width", function(d, i) {return dx*d.score})
+				.attr("height", dy);
+
+        // labels
+			var text = vis.selectAll("text")
+				.data(mest)
+				.enter()
+				.append("text")
+				.attr("class", function(d, i) {return "label " + d.name;})
+				.attr("x", 5)
+				.attr("y", function(d, i) {return dy*i + 15;})
+				.text( function(d) {return d.name + " (" + d.score  + ")";})
+				.attr("font-size", "15px")
+				.style("font-weight", "bold");
+
+      /*var g = vis.selectAll("g")
       .data(data)
       .enter().append("svg:g")
       .attr("fill", function(d, i) { return colors[i]; })
@@ -143,12 +178,12 @@ var n = 6, // number of samples
      .attr("y", h + 6)
      .attr("dy", ".71em")
      .attr("text-anchor", "middle")
-     .text(function(d, i) { return ord[i]; }); // OBS: coloca o year no x axis
+     .text(function(d, i) { return ord[i]; }); // OBS: coloca o year no x axis*/
 
    }
 
    function redraw(data) {
-    var g = vis.selectAll("g");
+    /*var g = vis.selectAll("g");
     g.data(data)
     .attr("fill", function(d, i) { return colors[i]; })
     .attr("transform", function(d, i) { return "translate(" + y1(i) + ",0)"; });
@@ -160,5 +195,5 @@ var n = 6, // number of samples
     .attr("height", x)
     .transition()
     .delay(50)
-    .attr("y", function(d) { return h - x(d); });
+    .attr("y", function(d) { return h - x(d); });*/
   }

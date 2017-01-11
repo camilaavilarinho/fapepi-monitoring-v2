@@ -131,3 +131,7 @@ hr {
   top: 100%;
   left: 0;
 }
+/* Test chart  */
+.bar{
+  fill: #9ECAE1;  
+}
