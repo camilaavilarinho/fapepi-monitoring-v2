@@ -9,10 +9,10 @@ xy = d3.geo.mercator().translate([2500, -105]).scale(19000),
 path = d3.geo.path().projection(xy);
 
 
-var svg = d3.select("#chart")
+var vis = d3.select("#chart")
 .append("svg");
 
-var districts = svg.append("g")
+var districts = vis.append("g")
 .attr("id", "districts")
 .attr("class", "Blues");
 
@@ -40,7 +40,7 @@ function initialize(){
   data = all_data['16'][0];
 };
 
-d3.json("data/chart_data.json", function(json) {
+d3.json("data/graphs.json", function(json) {
   chart_data = json;
 });
 
@@ -82,21 +82,16 @@ else {
 mouseover(selected_district_data);
 }
 
+//d3.select("#btn-phd").on("click", draw(data));
 
-
-ord = ['1', '2', '3', '4', '5', '6'];
-areas = ["Comunicação", "Computação", "Agronomia", "Física", "História", "Biologia"];
-var i = 0;
 
 var n = 6, // number of samples
     m = 2; // number of series
 
     var w = 435,
-    h = 150,
-    x = d3.scale.linear().domain([50, 100]).range([0, h]),
-    y0 = d3.scale.ordinal().domain(d3.range(n)).rangeBands([0, w], .2),
-    y1 = d3.scale.ordinal().domain(d3.range(m)).rangeBands([0, y0.rangeBand()]),
-    colors = ["#9ECAE1", "#08306B"];
+    h = 200;
+    /*
+    colors = ["#9ECAE1", "#08306B"];*/
 
     var tip = d3.tip()
     .attr('class', 'd3-tip')
@@ -105,60 +100,22 @@ var n = 6, // number of samples
       return areas[i];
     })
 
-    var vis = d3.select("#graphs")
-    .append("svg:svg")
-    .append("svg:g")
-    .attr("transform", "translate(10,10)");
 
-    vis.call(tip);
+    var svg = dimple.newSvg("#graphs", w, h);
 
     function draw(data) {
-      var g = vis.selectAll("g")
-      .data(data)
-      .enter().append("svg:g")
-      .attr("fill", function(d, i) { return colors[i]; })
-      .attr("transform", function(d, i) { return "translate(" + y1(i) + ",0)"; });
+      svg.selectAll('*').remove();
 
-      var rect = g.selectAll("rect");
-
-      rect
-      .data(function(data){return data;})
-      .enter().append("svg:rect")
-      .on("mouseover", tip.show)
-      .on('mouseout', tip.hide)
-      .attr("transform", function(d, i) { return "translate(" + y0(i) + ",0)"; })
-      .attr("width", y1.rangeBand())
-      .attr("height", x)
-      .attr("class", function(d, i) {return i;})
-      .transition()
-      .delay(50)
-      .attr("y", function(d) { return h - x(d); });
-
-     var text = vis.selectAll("text")
-     .data(d3.range(n))
-     .enter().append("svg:text")
-     .attr("class", "group")
-     .attr("transform", function(d, i) { return "translate(" + y0(i) + ",0)"; })
-     .attr("x", y0.rangeBand() / 2)
-     .attr("y", h + 6)
-     .attr("dy", ".71em")
-     .attr("text-anchor", "middle")
-     .text(function(d, i) { return ord[i]; }); // OBS: coloca o year no x axis
+      mest = data.mestrado;
+      var chart = new dimple.chart(svg, mest);
+      chart.addCategoryAxis("x", "name");
+      chart.addMeasureAxis("y", "score");
+      chart.addSeries(null, dimple.plot.bar);
+      chart.draw();
 
    }
 
    function redraw(data) {
-    var g = vis.selectAll("g");
-    g.data(data)
-    .attr("fill", function(d, i) { return colors[i]; })
-    .attr("transform", function(d, i) { return "translate(" + y1(i) + ",0)"; });
+     draw(data);
 
-    g.selectAll("rect")
-    .data(function(data){return data;})
-    .attr("transform", function(d, i) { return "translate(" + y0(i) + ",0)"; })
-    .attr("width", y1.rangeBand())
-    .attr("height", x)
-    .transition()
-    .delay(50)
-    .attr("y", function(d) { return h - x(d); });
   }
