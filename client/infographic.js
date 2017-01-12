@@ -67,6 +67,8 @@ function clicked(d, district){
     selected_district = district;
     d3.select(old_district).classed("clicked", false);
     d3.select(district).classed("clicked", true);
+    d3.selectAll(".label").classed("label-info", false);
+    d3.selectAll(".msc").classed("label-info", true);
     redraw(chart_data[selected_district_data.properties['dist_code']]);
     all_districts
     .on("mouseover", mouseover)
