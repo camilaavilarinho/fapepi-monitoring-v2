@@ -18,7 +18,7 @@ font-family: 'Droid Sans', sans-serif;
   position: relative;
   margin-bottom: 10px;
   border: 2px solid #ddd;
-  background-color: $primary-blue;
+  /*background-color: $primary-blue;*/
   background-image: url("../images/cover.png");
 }
 
@@ -61,6 +61,9 @@ font-family: 'Droid Sans', sans-serif;
 	fill: #08306B;
 }
 
+#TE, #PC, #LP, #FL, #CM, #BP, #AG{
+  fill: #2980b9;
+}
 .infobox {
 	background-color: #F3F3F3;
 	border-radius: 6px 6px 6px 6px;

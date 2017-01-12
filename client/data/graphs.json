@@ -1,184 +1,104 @@
 {
   "VP":{
-    "mestrado":[
-      {"area": "Física", "quantidade": 5},
-      {"area": "Ciências de Materiais", "quantidade": 7},
-      {"area": "Letras ", "quantidade": 3},
-      {"area": "Química", "quantidade": 7},
-      {"area": "Ciência Animal", "quantidade": 10},
-      {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-    ],
-    "doutorado":[
-      {"area": "Ciência Animal", "quantidade": 10},
-      {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-    ]
+    "mestrado":[],
+    "doutorado":[]
   } ,
     "TE": {
       "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
+        {"area": "Ciências Farmacêuticas", "quantidade": 9},
+        {"area": "Ciência dos Materiais", "quantidade": 8},
+        {"area": "Computação ", "quantidade": 9},
+        {"area": "Comunicação", "quantidade": 8},
+        {"area": "Desenvolvimento e Meio Ambiente", "quantidade": 7},
+        {"area": "Engenharia dos Materiais", "quantidade": 9},
+        {"area": "Ética e Epistomologia", "quantidade": 6},
+        {"area": "Farmacologia", "quantidade": 6},
+        {"area": "Física", "quantidade": 6},
+        {"area": "Geografia", "quantidade": 8},
+        {"area": "Letras", "quantidade": 14},
+        {"area": "Química", "quantidade": 6},
+        {"area": "Sociologia", "quantidade": 8}
       ],
       "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
+        {"area": "Biotecnologia", "quantidade": 20},
+        {"area": "Ciências Contábeis", "quantidade": 1},
+        {"area": "Educação", "quantidade": 4},
+        {"area": "Educação Física", "quantidade": 1},
+        {"area": "Filosofia", "quantidade": 1},
+        {"area": "História", "quantidade": 5},
+        {"area": "Linguistica", "quantidade": 1},
+        {"area": "Zootecnia", "quantidade": 12}
       ]
     },
     "SR":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     },
     "PX":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     },
     "PC":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
+      "mestrado":[],
       "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
+        {"area": "Comunicação", "quantidade": 1},
+        {"area": "Filosofia", "quantidade": 1}
       ]
     },
     "MP":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     },
     "LP":{
       "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
+        {"area": "Biotecnologia", "quantidade": 8},
+        {"area": "Ciências Biomédicas", "quantidade": 10}
       ],
       "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
+        {"area": "Enfermagem", "quantidade": 1},
+        {"area": "Linguistica", "quantidade": 1}
       ]
     },
     "FL":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
+      "mestrado":[],
       "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
+        {"area": "Filosofia", "quantidade": 1},
+        {"area": "Geografia", "quantidade": 1}
       ]
     },
     "CS":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     },
     "CM":{
       "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
+        {"area": "Ciências Contábeis", "quantidade": 1}
       ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "doutorado":[]
     },
     "BE":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     },
     "BP":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
+      "mestrado":[],
       "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
+        {"area": "Educação", "quantidade": 1}
       ]
     },
     "AP":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     },
     "AG":{
       "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
+        {"area": "Agronomia - Fitotecnia", "quantidade": 8},
+        {"area": "Zootecnia", "quantidade": 9}
       ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "doutorado":[]
     },
     "AC":{
-      "mestrado":[
-        {"area": "Física", "quantidade": 5},
-        {"area": "Ciências de Materiais", "quantidade": 7},
-        {"area": "Letras ", "quantidade": 3},
-        {"area": "Química", "quantidade": 7}
-      ],
-      "doutorado":[
-        {"area": "Ciência Animal", "quantidade": 10},
-        {"area": "Biotecnologia/Renorbio", "quantidade": 20}
-      ]
+      "mestrado":[],
+      "doutorado":[]
     }
   }

@@ -3,7 +3,6 @@ var chart_data;
 var selected_district = null;
 var clicked_flag = false;
 var selected_district_data = null;
-var all_data;
 
 xy = d3.geo.mercator().translate([2500, -105]).scale(19000),
 path = d3.geo.path().projection(xy);
@@ -32,13 +31,8 @@ d3.json("data/pi-micro0.json", function(json) {
 });
 
 d3.json("data/data.json", function(json) {
-  all_data = json;
-  initialize();
+  data = json;
 });
-
-function initialize(){
-  data = all_data['16'][0];
-};
 
 d3.json("data/graphs.json", function(json) {
   chart_data = json;
@@ -49,7 +43,6 @@ function mouseover(d) {
   d3.select("#info").classed("hide", false);
   d3.select("#intro").classed("hide", true);
   d3.select("#infoname").text(d.properties['NM_MICRO']);
-  //d3.select("#infoyear").text(district_data[0]['acad_year']);
   d3.select("#infovaluem").text(district_data[0]['msc']);
   d3.select("#infovaluep").text(district_data[0]['phd']);
 }
