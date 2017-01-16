@@ -1,4 +1,4 @@
-var data; // loaded asynchronously
+var data;
 var chart_data;
 var selected_district = null;
 var clicked_flag = false;
@@ -45,6 +45,15 @@ function mouseover(d) {
   d3.select("#infoname").text(d.properties['NM_MICRO']);
   d3.select("#infovaluem").text(district_data[0]['msc']);
   d3.select("#infovaluep").text(district_data[0]['phd']);
+  if(d.properties['dist_code'] == "LP"){
+    d3.select("#infomicro").text("Microrregião onde está incluida a cidade de Parnaíba");
+  }else if(d.properties['dist_code'] == "AG"){
+    d3.select("#infomicro").text("Microrregião onde está incluida a cidade de Bom Jesus");
+  }else if(d.properties['dist_code'] == "PC"){
+    d3.select("#infomicro").text("Microrregião onde estão incluidas as cidades de Picos e Oeiras");
+  }else if(d.properties['dist_code'] == "BP"){
+    d3.select("#infomicro").text("Microrregião onde está incluida a cidade de Piripiri");
+  }else d3.select("#infomicro").text("");
 }
 
 function mouseout(){
