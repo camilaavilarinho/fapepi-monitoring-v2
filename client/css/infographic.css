@@ -22,6 +22,12 @@ font-family: 'Droid Sans', sans-serif;
   background-image: url("../images/cover.png");
 }
 
+.title{
+  text-align: center;
+  padding: 10px;
+  color: #999999;
+}
+
 #wrap {
 	min-height: 100%;
 	height: auto !important;
@@ -101,7 +107,6 @@ hr {
 }
 
 .value #infovaluem{
-
 	color: #9ECAE1;
 }
 
@@ -115,6 +120,5 @@ hr {
   padding: 4px 6px;
 }
 .label-info{
-
   margin-bottom: 5px;
 }
